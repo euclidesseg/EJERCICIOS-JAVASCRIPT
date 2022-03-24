@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+        function promedio(){
+            var notas
+            var nota 
+            var promedioGanadas
+            var pomedioperdidas
+            var iterador = 1
+            var notaVaja = 0
+            var notaAlta = 0
+            var total = 0
+
+            notas =prompt("ingrese el numero de notas a promediar")
+        
+            while(iterador <= parseInt(notas)){
+                nota = prompt("ingrese la nota numero " + iterador)
+                nota = parseInt(nota)
+                if(nota < 3){
+                    notaVaja = notaVaja + nota
+                }else{
+                    notaAlta = notaAlta + nota
+                }
+                iterador ++
+            }
+            total = notaVaja + notaAlta
+            promedioGanadas = (notaAlta * 100)/total
+            pomedioperdidas = (notaVaja *100)/total
+            alert("el promedio de notas ganadas fue de  " + promedioGanadas + "%" + "\n"+
+            
+                  "el promedio de notas perdidas fue de  " + pomedioperdidas +"%")
+            
+        }
+    </script>
+</head>
+<body>
+    <main>
+        <button onclick="promedio()">CALCULAR</button><br>
+        <a href="ejer3.html">ir al ejercicio 3</a>
+    </main>
+</body>
+</html>
