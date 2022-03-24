@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+        function suma(){
+            var numero
+            var suma = 0
+            var contador = 0
+            numero = prompt("Ingrese el numero que desee");
+            while(contador <= parseInt(numero)){
+                suma = suma + contador
+                contador = contador + 1
+            }
+            document.write(" la suma de los numeros naturales es " + suma)
+        }
+    </script>
+</head>
+<body>
+    <main>
+        <button onclick="suma()">EJECUTAR</button><br>
+        <a href="ejerc2.html">ir al ejercicio 2</a>
+    </main>
+</body>
+</html>
