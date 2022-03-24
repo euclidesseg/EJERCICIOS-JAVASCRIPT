@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+        function fin(){
+            var iterador = 1
+            var numero
+            var sumaNumeros = 0;
+            var suma = 0;
+            while(iterador != 0){
+                numeros = prompt("ingrese cualquier numero")
+                numeros = parseInt(numeros)
+                sumaNumeros = parseInt(sumaNumeros) + parseInt(iterador)
+                suma = suma + numeros;
+                iterador = prompt("DESEA CONTINUAR INGRSANDO NUMEROS 1 PARA SI 0 PARA NO")
+                
+            }
+            alert("En total se ingresaron "+ sumaNumeros + " numeros" + "\n"+
+                      "la suma de dichos numeros es " + suma)
+ 
+        }
+    </script>
+</head>
+<body>
+    <main>
+        <button onclick="fin()">Ejecutar</button><br>
+        <a href="ejer4.html">ir al ejercicio 4 </a>
+    </main>
+</body>
+</html>
