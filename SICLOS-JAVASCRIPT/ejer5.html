@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+        function contar(){
+
+            var tabla
+            var resultado  = 0
+            var iterador = 0
+            var inicio = 0
+            tabla = prompt("ingrese el numero que desee")
+
+            while(iterador <= parseInt(tabla)){
+                resultado = parseInt(inicio) * tabla
+                document.write("<p>" + inicio +" x " + tabla + " = " + resultado +"</p>")
+                inicio++
+                tabla--
+            }
+            
+        }
+    </script>
+</head>
+<body>
+    <main>
+        <button onclick="contar()">mostrad la tabla</button><br>
+        <a href="ejer6.html">ir al ejercicio 6</a>
+    </main>
+</body>
+</html>
