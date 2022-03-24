@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+        function escalera(){
+        var altura = 10;
+        var espacio;
+        var asterisco;
+
+        for(espacio = 0; espacio <= altura; espacio++){
+            for(asterisco = altura;asterisco >= espacio;asterisco--){
+                document.write("*")
+            }
+           document.write("<p></p>")
+        }
+       
+   /*     for(f=1; f<=11; f++){
+            for(c =1;c<=11-f;c++){
+                altura = altura +".";
+            }
+            for(c = 1; c<=f;c++){
+                altura = altura +"*";
+            }
+            altura = altura +"\n";
+        }
+        alert(altura)*/
+     }
+    </script>
+</head>
+<body>
+    <main>
+        <button onclick="escalera()">mostrar</button><br>
+    </main>
+    <a href="ejer10.html">ir al ejercicio 9</a>
+    
+</body>
+</html>
